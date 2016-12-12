@@ -12,15 +12,9 @@
       register: hesiod_conf
 
     - name: "[Test] Test File Defaults"
-      shell: "cat {{hesiod_configuration_file}}"
+      shell: "grep 'lhs=.ns' {{hesiod_configuration_file}}"
       when: hesiod_conf.stat.exists == True
       register: hesiod_conf_contents
 
     - debug:
         var: hesiod_conf_contents
-
-    - assert:
-        that:
-          - "hesiod_conf_contents.stdout.find(lhs=.ns)"
-          - "hesiod_conf_contents.stdout.find('rhs=.EXAMPLE.COM')"
-          - "hesiod_conf_contents.stdout.find('classes=HS,IN')"
