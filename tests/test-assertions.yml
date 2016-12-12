@@ -16,6 +16,9 @@
       when: hesiod_conf.stat.exists == True
       register: hesiod_conf_contents
 
+    - debug:
+        var: hesiod_conf_contents
+
     - assert:
         that:
           - "hesiod_conf_contents.stdout.find('lhs=.ns')"
