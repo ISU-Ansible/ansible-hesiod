@@ -21,6 +21,6 @@
 
     - assert:
         that:
-          - "hesiod_conf_contents.stdout.find('lhs=\.ns')"
-          - "hesiod_conf_contents.stdout.find('rhs=\.EXAMPLE\.COM')"
+          - "hesiod_conf_contents.stdout.find(lhs=.ns)"
+          - "hesiod_conf_contents.stdout.find('rhs=.EXAMPLE.COM')"
           - "hesiod_conf_contents.stdout.find('classes=HS,IN')"
