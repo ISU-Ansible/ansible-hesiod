@@ -1,0 +1,5 @@
+---
+hesiod:
+  rhs: ".EXAMPLE.COM"
+  lhs: ".ns"
+  classes: "HS,IN"

@@ -1,0 +1,20 @@
+---
+- name: Include OS-specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Install the hesiod systemd
+  package:
+    name: "{{item}}"
+    state: present
+  with_items: "{{hesiod_packages}}"
+
+- name: Install hesiod.conf
+  tags:
+    - configuration
+    - hesiod
+  template:
+      src: hesiod_conf.j2
+      dest: "{{hesiod_configuration_file}}"
+      owner: root
+      group: root
+      mode: 0644

@@ -1,0 +1,5 @@
+---
+hesiod_packages:
+  - hesiod
+
+hesiod_configuration_file: "/etc/hesiod.conf"
