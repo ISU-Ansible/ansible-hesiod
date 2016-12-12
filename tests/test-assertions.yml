@@ -18,3 +18,7 @@
 
     - debug:
         var: hesiod_conf_contents
+
+    - assert:
+        that:
+          - "hesiod_conf_contents.rc == 0"
