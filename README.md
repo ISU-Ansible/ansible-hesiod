@@ -1,5 +1,7 @@
 Hesiod
 ---------
+[![Build Status](https://travis-ci.org/ISU-Ansible/ansible-hesiod.svg?branch=master)](https://travis-ci.org/ISU-Ansible/ansible-ssh)
+
 The hesiod role is used to install Hesiod and the hesiod configuration file.
 
 ## Variables
