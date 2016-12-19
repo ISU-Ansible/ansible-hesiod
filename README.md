@@ -38,7 +38,6 @@ To use the hesiod playbook, simply call it with your preferred variables.
 
 License
 -------
-
 GPL2
 
 Author Information
