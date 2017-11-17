@@ -10,6 +10,7 @@ Requirements
 * Enterprise Linux 6
 * Enterprise Linux 7
 
+
 Role Variables
 --------------
 Defaults are:
@@ -19,9 +20,11 @@ Defaults are:
       lhs: ".ns"
       classes: "HS,IN"
 
+
 Dependencies
 ------------
 No dependencies.
+
 
 Example Playbook
 ----------------
@@ -36,9 +39,11 @@ To use the hesiod playbook, simply call it with your preferred variables.
       roles:
          - ISU-Ansible.hesiod
 
+
 License
 -------
 GPL2
+
 
 Author Information
 ------------------
